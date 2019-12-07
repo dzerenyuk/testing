@@ -40,8 +40,6 @@ class TestSample:
         assert 'Our Service Philosophy' in driver.page_source
 
 
-#adding new information
-
 
 
 
