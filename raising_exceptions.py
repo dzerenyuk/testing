@@ -15,13 +15,6 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
     except Exception as err:
         print('An exception occured: ' + str(err))
 '''
-import traceback
-try:
-    raise Exception('This is the error message')
-except:
-    error_file = open('errorInfo.txt', 'w')
-    error_file.write(traceback.format_exc())
-    error_file.close()
-    #print('The traceback info was written to errorInfo.txt')
-file = open('errorInfo.txt')
-print(file.readlines())
+import request_status_code as rsc
+x = rsc.Person('Dmytro')
+print(x.name)
